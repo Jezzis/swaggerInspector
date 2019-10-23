@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>DK swagger doc tool</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        h1, h2, h3 {
+            line-height: 40px;
+            margin: 0;
+        }
+        .container {
+            margin: 10px;
+        }
+        .title {
+            margin: 10px 5px 10px 5px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .innerBox {
+            display: inline;
+        }
+
+        .editor {
+            margin: 10px;
+            width: 40%;
+            float: left;
+            min-height: 300px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .json-editor-manual {
+            background-color: #fff;
+            text-align: left;
+        }
+
+        .viewer {
+            border: 1px solid #e5e5e5;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body class="html">
+<div class="container">
+    <!-- Content here -->
+    <div class="title">
+        <h1>Swagger PHP Doc Editor</h1>
+    </div>
+    <div class="innerBox">
+        <textarea id="req" class="editor json-editor-manual">
+            {
+                "async": true,
+                "crossDomain": true,
+                "url": "http://test-crm-base-service.danke.life/api/v1/temporary_order/order/detail/20190924000036",
+                "method": "GET",
+                "headers": {
+                    "User-Agent": "PostmanRuntime/7.18.0",
+                    "Accept": "*/*",
+                    "Cache-Control": "no-cache",
+                    "Postman-Token": "1508fe31-df91-4634-8d8c-81f0ad30d4c8,f9dd05cf-6880-440a-aa38-59806de06614",
+                    "Host": "test-crm-base-service.danke.life",
+                    "Accept-Encoding": "gzip, deflate",
+                    "Connection": "keep-alive",
+                    "cache-control": "no-cache"
+                }
+            }
+        </textarea>
+        <div class="tools"></div>
+        <div class="viewer"></div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>DK swagger doc tool</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="html">
+<div class="container">
+    <!-- Content here -->
+    <div class="card">
+        <div class="card-body">
+            { DK swagger doc tool }
+        </div>
+    </div>
+    <form class="" method="post" action="/make?r={{.R}}">
+        <div class="mb-3">
+            <label for="validationTextarea">Parse JSON Data</label>
+            <textarea class="form-control" name="request" style="height:500px" id="">
+{
+  "async": true,
+  "crossDomain": true,
+  "url": "http://test-crm-base-service.danke.life/api/v1/temporary_order/order/detail/20190924000036",
+  "method": "GET",
+  "headers": {
+    "User-Agent": "PostmanRuntime/7.18.0",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "1508fe31-df91-4634-8d8c-81f0ad30d4c8,f9dd05cf-6880-440a-aa38-59806de06614",
+    "Host": "test-crm-base-service.danke.life",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "keep-alive",
+    "cache-control": "no-cache"
+  }
+}
+        </textarea>
+            <div class="invalid-feedback" style="display:none">
+                Please enter a message in the textarea.
+            </div>
+            <input class="btn btn-primary btn-lg btn-block mt-3" type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
